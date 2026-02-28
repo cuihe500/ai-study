@@ -19,6 +19,7 @@ docs/
 │
 ├── chapter-01/                 # 第一章：AI与编程的初次相遇
 │   ├── why-ai-coding.md       # 为什么用AI辅助编程
+│   ├── llm-overview.md        # 认识主流大模型
 │   ├── ai-coding-tools.md     # 主流AI编码工具介绍
 │   └── first-attempt.md       # 第一次让AI写代码
 │

@@ -51,7 +51,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/cuihe500/ai-study/tree/main/',
         },
         blog: false, // 禁用 blog 功能
         theme: {
@@ -70,7 +70,7 @@ const config: Config = {
     navbar: {
       title: 'AI Study',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'AI Study',
         src: 'img/logo.svg',
       },
       items: [
@@ -83,7 +83,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} 崔昌赫. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 崔昌赫 & 鹿一萍 With ❤️. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
