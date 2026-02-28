@@ -1,0 +1,8 @@
+{
+  "label": "第十一章：Agent进阶——多智能体协作",
+  "position": 11,
+  "link": {
+    "type": "generated-index",
+    "description": "掌握SubAgent、多Agent协作和MCP协议等进阶概念。"
+  }
+}
