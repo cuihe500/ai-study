@@ -25,9 +25,8 @@ flowchart TB
 
     subgraph 终端工具
         E[Claude Code<br/>Anthropic官方]
-        F[aider<br/>开源/多模型]
+        F[OpenCode<br/>开源/模型无关]
         G[Gemini CLI<br/>Google出品]
-        H[OpenCode<br/>开源/模型无关]
     end
 
     subgraph 自主Agent
@@ -42,7 +41,7 @@ flowchart TB
 
 ## 两大阵营：IDE vs 终端
 
-如果你观察一下当前主流的AI编程工具，会发现它们大致可以分为两大阵营。一类是集成在图形化编辑环境中的**IDE工具**，代表产品是Cursor、Windsurf、GitHub Copilot；另一类是运行在命令行终端里的**CLI工具**，代表产品是Claude Code、aider、Gemini CLI。
+如果你观察一下当前主流的AI编程工具，会发现它们大致可以分为两大阵营。一类是集成在图形化编辑环境中的**IDE工具**，代表产品是Cursor、Windsurf、GitHub Copilot；另一类是运行在命令行终端里的**CLI工具**，代表产品是Claude Code、OpenCode、Gemini CLI。
 
 这两类工具不仅仅是"界面"不同，它们代表了两种不同的工作哲学和思维模式。理解这种差异，是选择工具的第一步。
 
@@ -85,7 +84,7 @@ flowchart TD
 
     D --> I{需要什么程度？}
     I -->|深度Agent体验| J[Claude Code]
-    I -->|开源/多模型| K[aider]
+    I -->|开源/多模型| K[OpenCode]
     I -->|免费方案| L[Gemini CLI]
 ```
 
@@ -159,9 +158,9 @@ Windsurf的核心优势在于**不限量的使用**。当Cursor在2025年8月修
 - 不想适应新的编辑器
 - 需要一个免费但功能强大的选择
 
-## 终端工具对比：Claude Code vs aider vs Gemini CLI
+## 终端工具对比：Claude Code vs OpenCode vs Gemini CLI
 
-在终端阵营中，Claude Code在2025年引爆了整个行业，aider继续保持开源社区的热度，Google也推出了Gemini CLI加入竞争。
+在终端阵营中，Claude Code在2025年引爆了整个行业，OpenCode继续保持开源社区的热度，Google也推出了Gemini CLI加入竞争。
 
 ### Claude Code：Agent时代的先驱
 
@@ -183,17 +182,17 @@ Windsurf的核心优势在于**不限量的使用**。当Cursor在2025年8月修
 
 **与GitHub和GitLab的深度集成**让工作流更加顺畅。Claude Code能直接读取Issue、创建分支、提交PR——所有这些都在终端对话中完成，不需要你在网页和编辑器之间跳来跳去。
 
-### aider：开源自由派
+### OpenCode：开源自由派
 
-aider在开源社区积累了几年的口碑，它最大的优势是**模型无关性**。
+OpenCode在开源社区积累了几年的口碑，它最大的优势是**模型无关性**。
 
-当你使用Claude Code时，你被锁定在Anthropic的模型上。但aider允许你使用任何兼容API的模型——Claude、GPT-4、DeepSeek、甚至是本地的Ollama。这给了你极大的灵活性：
+当你使用Claude Code时，你被锁定在Anthropic的模型上。但OpenCode允许你使用任何兼容API的模型——Claude、GPT-4、DeepSeek、甚至是本地的Ollama。这给了你极大的灵活性：
 
 - 想要最好的效果？用Claude Opus或GPT-4
 - 预算有限？用DeepSeek或o3-mini
 - 隐私要求高？用本地部署的Ollama
 
-** Git原生集成**是aider的另一大特色。每次代码修改，aider都会生成一个清晰的commit。如果你不喜欢某个改动，只需要`git revert`就能撤销。这种"一切皆可回滚"的安全感，让很多开发者感到踏实。
+**Git原生集成**是OpenCode的另一大特色。每次代码修改，OpenCode都会生成一个清晰的commit。如果你不喜欢某个改动，只需要`git revert`就能撤销。这种"一切皆可回滚"的安全感，让很多开发者感到踏实。
 
 **透明的修改流程**让一切都不神秘。你需要显式地用`/add`命令把文件加入会话，清楚地知道AI能看到哪些内容。每次修改都展示diff，你可以逐个确认或批量接受。
 
@@ -207,7 +206,7 @@ Gemini CLI也采用了Agent架构，能读取文件、运行命令、执行git�
 
 ### 工作方式对比
 
-| 特性 | Claude Code | aider | Gemini CLI |
+| 特性 | Claude Code | OpenCode | Gemini CLI |
 |-----|-------------|-------|------------|
 | 模型支持 | Claude专属 | 任意模型 | Gemini专属 |
 | 价格 | $17/月 Pro | 自带API | 免费额度 |
@@ -222,7 +221,7 @@ Gemini CLI也采用了Agent架构，能读取文件、运行命令、执行git�
 - 愿意订阅Claude Pro/Max
 - 需要处理复杂的开发任务
 
-**aider适合你，如果你：**
+**OpenCode适合你，如果你：**
 - 希望完全掌控使用哪个模型
 - 重视开源和社区驱动
 - 有特定的隐私或成本考量
@@ -247,7 +246,7 @@ Gemini CLI也采用了Agent架构，能读取文件、运行命令、执行git�
 | 日常开发，预算充足 | Cursor Pro | 最佳的IDE+AI整合体验 |
 | 免费体验AI编程 | Windsurf + Gemini CLI | 两端都免费，功能够用 |
 | 深度Agent任务 | Claude Code | 目前最成熟的终端Agent |
-| 开源/自托管需求 | aider + Ollama | 完全本地，模型自由 |
+| 开源/自托管需求 | OpenCode + Ollama | 完全本地，模型自由 |
 | 企业/团队协作 | GitHub Copilot | 与GitHub生态深度集成 |
 
 最重要的是，记住工具是为你服务的。如果一个工具让你感觉别扭、效率反而降低了，那就果断换一个。没有最好的工具，只有最适合你的工具。
@@ -260,7 +259,7 @@ Gemini CLI也采用了Agent架构，能读取文件、运行命令、执行git�
 
 然后，我们比较了IDE阵营的主要玩家。Cursor以$20/月提供最佳的综合体验；GitHub Copilot以$10/月成为企业用户的稳妥选择；Windsurf提供免费但功能强大的替代方案。三者各有侧重，选择取决于你的预算和具体需求。
 
-接着，我们比较了终端阵营的主要选择。Claude Code是Agent编程的标杆；aider以其开源和模型无关性吸引自由派用户；Gemini CLI提供了免费入场券。终端不再是极客专属，正在成为最平易近人的AI编程入口。
+接着，我们比较了终端阵营的主要选择。Claude Code是Agent编程的标杆；OpenCode以其开源和模型无关性吸引自由派用户；Gemini CLI提供了免费入场券。终端不再是极客专属，正在成为最平易近人的AI编程入口。
 
 最后，我的建议是：不要在选择上纠结太久，先用起来再说。工具的价值在于实际使用中发现，而不是比较得出。
 
