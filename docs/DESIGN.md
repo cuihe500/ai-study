@@ -24,11 +24,9 @@ docs/
 │   └── first-attempt.md       # 第一次让AI写代码
 │
 ├── chapter-02/                 # 第二章：AI编码工具详解
-│   ├── cursor-guide.md        # Cursor使用指南
-│   ├── github-copilot.md      # GitHub Copilot使用指南
-│   ├── vsc-extensions.md      # VS Code AI插件推荐
-│   ├── claude-code.md         # Claude Code入门
-│   └── tools-comparison.md    # 工具对比与选择建议
+│   ├── tools-comparison.md    # 工具对比与选择建议（引入）
+│   ├── cursor-guide.md        # Cursor使用指南（IDE代表）
+│   └── claude-code.md         # Claude Code入门（终端工具代表）
 │
 ├── chapter-03/                 # 第三章：AI编程基础技能
 │   ├── prompt-for-code.md     # 如何描述你的编程需求

@@ -14,6 +14,22 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
+  // 忽略 vscode-languageserver-types 的动态 require 警告
+  plugins: [
+    function customWebpackConfig() {
+      return {
+        name: 'custom-webpack-config',
+        configureWebpack: () => ({
+          ignoreWarnings: [
+            {
+              module: /vscode-languageserver-types/,
+            },
+          ],
+        }),
+      };
+    },
+  ],
+
   // Set the production url of your site here
   url: 'https://ai-study.thankseveryone.top',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -83,7 +99,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} 崔昌赫 & 鹿一萍 With ❤️. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} 崔昌赫 & 鹿一萍. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

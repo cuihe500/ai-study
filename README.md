@@ -86,4 +86,4 @@ npm run serve
 
 ## 许可证
 
-Copyright © 2026 崔昌赫 & 鹿一萍 With ❤️
+Copyright © 2026 崔昌赫 & 鹿一萍
