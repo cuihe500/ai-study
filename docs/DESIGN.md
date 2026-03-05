@@ -26,7 +26,8 @@ docs/
 ├── chapter-02/                 # 第二章：AI编码工具详解
 │   ├── tools-comparison.md    # 工具对比与选择建议（引入）
 │   ├── cursor-guide.md        # Cursor使用指南（IDE代表）
-│   └── claude-code.md         # Claude Code入门（终端工具代表）
+│   ├── claude-code.md         # Claude Code入门（终端工具代表）
+│   └── openclaw.md            # OpenClaw：全能AI代理（超越编码的助手）
 │
 ├── chapter-03/                 # 第三章：AI编程基础技能
 │   ├── prompt-for-code.md     # 如何描述你的编程需求
