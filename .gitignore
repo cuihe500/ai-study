@@ -3,6 +3,7 @@
 
 # Production
 /build
+build.tar.gz
 
 # Generated files
 .docusaurus
@@ -23,3 +24,4 @@ yarn-error.log*
 .claude
 CLAUDE.MD
 AGENT.MD
+.codefuse
